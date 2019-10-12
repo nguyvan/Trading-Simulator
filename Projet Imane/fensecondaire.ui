@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FenSecondaire</class>
+ <widget class="QWidget" name="FenSecondaire">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>680</width>
+    <height>281</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="titreApplication">
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;strong&gt;Bienvenue sur la plateforme Trading Simulator&lt;/strong&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QGroupBox" name="chargementDonnees">
+       <property name="title">
+        <string>Chargement des données</string>
+       </property>
+       <widget class="QRadioButton" name="chargerFichier">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>378</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>charger un fichier</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="donneesInitiales">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>378</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>utiliser les données initiales</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="dateDebutDonnees">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>20</y>
+          <width>110</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="dateTime">
+         <datetime>
+          <hour>0</hour>
+          <minute>0</minute>
+          <second>0</second>
+          <year>2010</year>
+          <month>7</month>
+          <day>16</day>
+         </datetime>
+        </property>
+        <property name="maximumDateTime">
+         <datetime>
+          <hour>23</hour>
+          <minute>59</minute>
+          <second>59</second>
+          <year>2019</year>
+          <month>5</month>
+          <day>13</day>
+         </datetime>
+        </property>
+        <property name="minimumDateTime">
+         <datetime>
+          <hour>0</hour>
+          <minute>0</minute>
+          <second>0</second>
+          <year>2010</year>
+          <month>7</month>
+          <day>16</day>
+         </datetime>
+        </property>
+        <property name="minimumDate">
+         <date>
+          <year>2010</year>
+          <month>7</month>
+          <day>16</day>
+         </date>
+        </property>
+        <property name="displayFormat">
+         <string>yyyy.MM.dd</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="m_boutonContinuer">
+       <property name="text">
+        <string>Continuer</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="m_boutonQuitter">
+       <property name="text">
+        <string>Quitter</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
